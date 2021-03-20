@@ -17,5 +17,3 @@ def countword():
         if word == i:
             count= count+1
     return count
-
-print(countword()) 
