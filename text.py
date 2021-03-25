@@ -10,10 +10,11 @@ def countword():
     file = file.read()
 
     f= file.find('\n')
-    word= file[:f]
+    word= file[:f].lower()
     file=revword(file[f:])
     count=1
     for i in file.rsplit():
         if word == i:
             count= count+1
     return count
+
